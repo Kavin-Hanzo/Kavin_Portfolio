@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="claudia.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Portfolio</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#" onclick="showPage('home')" class="active">Home</a></li>
+                <li><a href="#" onclick="showPage('summary')">Summary & Skills</a></li>
+                <li><a href="#" onclick="showPage('experience')">Experience</a></li>
+                <li><a href="#" onclick="showPage('projects')">Projects</a></li>
+                <li><a href="#" onclick="showPage('education')">Education</a></li>
+                <li><a href="#" onclick="showPage('awards')">Awards</a></li>
+            </ul>
+            <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <div class="container">
+                <div class="hero">
+                    <div class="profile-photo">
+                        <img src="images/profile.jpg" alt="Profile Photo" style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
+                    </div>
+                    <h1>Sivakavin K E</h1>
+                    <div class="role">Student @ SASTRA</div>
+
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>kesivakavin@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>9443263299</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Tamil Nadu, India</span>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/sivakavin" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/Kavin-Hanzo" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <!-- <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fas fa-globe"></i> -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Professional Summary & Skills -->
+        <div id="summary" class="page">
+            <div class="container">
+                <h2 class="section-title">Professional Summary</h2>
+                
+                <div class="professional-summary">
+                    <p>A person interested in solving environmental and business problems using Machine Learning, Computer Vision, Data Science.</p>
+                </div>
+
+                <div class="skills-section">
+                    <h3>Skills & Tools</h3>
+                    
+                    <div class="skills-category">
+                        <h4>Programming Languages</h4>
+                        <div class="skills-badges">
+                            <span class="skill-badge">Python</span>
+                            <span class="skill-badge">JavaScript</span>
+                            <span class="skill-badge">Java</span>
+                            <span class="skill-badge">C & C++</span>
+                            <span class="skill-badge">SQL</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h4>Technical Skills</h4>
+                        <div class="skills-badges">
+                            <span class="skill-badge">Machine Learning</span>
+                            <span class="skill-badge">Deep Learning</span>
+                            <span class="skill-badge">Computer Vision</span>
+                            <span class="skill-badge">Data Science</span>
+                            <span class="skill-badge">PyTorch</span>
+                            <span class="skill-badge">Github</span>
+                            <span class="skill-badge">Power BI</span>
+                            <span class="skill-badge">Excel</span>
+                            <span class="skill-badge">PostgreSQL</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h4>Soft Skills</h4>
+                        <div class="skills-badges">
+                            <span class="skill-badge">Design Thinking</span>
+                            <span class="skill-badge">Business Strategy</span>
+                            <span class="skill-badge">Behavioural Economics</span>
+                            <span class="skill-badge">Leadership</span>
+                            <span class="skill-badge">Problem Solving</span>
+                            <span class="skill-badge">Teamwork</span>
+                            <span class="skill-badge">Project Management</span>
+                            <span class="skill-badge">Environmental Stewardship</span>
+                            <span class="skill-badge">Value-Driven Innovation</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience -->
+        <div id="experience" class="page">
+            <div class="container">
+                <h2 class="section-title">Experience</h2>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>Open-Source Contributor</h3>
+                        <div class="period">2024 — Present</div>
+                        <div class="company">Kosaksi Pasapughal Experiments</div>
+                        <div class="description">
+                            I contribute to analyzing and enhancing computer vision models, leveraging expertise in machine learning and deep learning. Collaborating with global communities has refined my technical problem-solving skills while expanding my professional network.
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h3>Executive Co-Ordinator</h3>
+                        <div class="period">2024 — present</div>
+                        <div class="company">Entrepreneurship Cell, SASTRA</div>
+                        <div class="description">
+                            I lead media cluster, crafting compelling narratives that inspire action, foster community, and drive innovation among entrepreneurs and problem-solvers. My filmmaking and cinematography skills enhance storytelling, amplifying impactful stories and increasing visibility for initiatives.
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <h3>Member | SASTRA Tamil Sangam</h3>
+                        <div class="period">2022 — 2023</div>
+                        <div class="company">SASTRA Tamil Sangam</div>
+                        <div class="description">
+                            As a passionate member of SASTRA Tamil Sangam, I actively contributed to promoting the rich history, culture, and importance of the Tamil language through various initiatives and events. Over my two-year tenure, I developed key skills in communication, teamwork, and problem-solving across diverse domains.
+                        </div>
+                        <div class="achievements">
+                            Kuruksastra 2022 Winner, Kuruksastra 2023 Host Performer
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <div id="projects" class="page">
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                
+                <div class="projects-grid">
+                    <div class="project-card" onclick="openProjectModal('project1')">
+                        <div class="project-thumbnail">
+                            <img src="images/Methane Plume.webp" alt="Methane" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Methane Plume Detection</h3>
+                            <span class="project-domain">Deep Learning</span>
+                            <span class="project-domain">Computer Vision</span>
+                            <p>Transformer-Based model for Methane Plume Detection & Segmentation from Satellite Imagery</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Kavin-Hanzo/Ch4_Plume-detection" class="project-link" onclick="event.stopPropagation()">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" onclick="openProjectModal('project2')">
+                        <div class="project-thumbnail">
+                            <img src="images/objdet.webp" alt="Detection" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Real-Time Detection</h3>
+                            <span class="project-domain">Deep Learning</span>
+                            <p>Camera based real-time object detection system using YOLO and OpenCV</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Kavin-Hanzo/Detection-and-Segmentation" class="project-link" onclick="event.stopPropagation()">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" onclick="openProjectModal('project3')">
+                        <div class="project-thumbnail">
+                            <img src="images/soiltype.webp" alt="Soil" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Soil Classification</h3>
+                            <span class="project-domain">Computer Vision</span>
+                            <p>Classifying soil types from image data.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Kavin-Hanzo/Soil_Cls" class="project-link" onclick="event.stopPropagation()">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="project-card" onclick="openProjectModal('project4')">
+                        <div class="project-thumbnail">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Mobile App</h3>
+                            <span class="project-domain">Mobile Development</span>
+                            <p>Cross-platform mobile application with seamless user experience.</p>
+                            <div class="project-links">
+                                <a href="#" class="project-link" onclick="event.stopPropagation()">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Education & Research -->
+        <div id="education" class="page">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                
+                <div class="education-item">
+                    <h3>B.Tech in Computer Science & Business Systems</h3>
+                    <div class="institution">SASTRA Deemed to be University</div>
+                    <div class="period">2022 - 2026</div>
+                    <div class="details">
+                        Specialized in Business, Economics and Management. Relevant coursework includes Data Structures, Algorithms, Database Systems, Software Engineering, Operating Systems, Networks, and Artificial Intelligence.
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <h3>Research Works</h3>
+                    <div class="institution">SASTRA Deemed to be University</div>
+                    <div class="period">2025</div>
+                    <div class="details">
+                        Completed research credit in computer vision domain, worked along with a Professor (Guide). Learnt many things about geospatail data, Satellite images, especially about the significance of Methane (ch4) emission.
+                    </div>
+                </div>
+
+                <!-- <div class="education-item">
+                    <h3>Online Certifications</h3>
+                    <div class="institution">Coursera, edX, Udacity</div>
+                    <div class="period">2022 - Present</div>
+                    <div class="details">
+                        Completed specialized courses in Deep Learning, Cloud Computing, and Full-Stack Development. Maintained continuous learning to stay updated with industry trends.
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- Awards & Achievements -->
+        <div id="awards" class="page">
+            <div class="container">
+                <h2 class="section-title">Awards & Achievements</h2>
+                
+                <div class="awards-grid">
+                    <div class="award-card">
+                        <div class="award-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3 class="award-title">Kuruksastra Winner</h3>
+                        <div class="award-year">2022</div>
+                        <p>First place in the annual cultural competition at SASTRA University</p>
+                    </div>
+
+                    <div class="award-card">
+                        <div class="award-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="award-title">Host Performer</h3>
+                        <div class="award-year">2023</div>
+                        <p>Selected as host performer for Kuruksastra 2023 cultural event</p>
+                    </div>
+
+                    <!-- <div class="award-card">
+                        <div class="award-icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <h3 class="award-title">Open Source Contributor</h3>
+                        <div class="award-year">2024</div>
+                        <p>Recognition for significant contributions to open-source projects</p>
+                    </div> -->
+
+                    <!-- <div class="award-card">
+                        <div class="award-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h3 class="award-title">Leadership Excellence</h3>
+                        <div class="award-year">2024</div>
+                        <p>Outstanding leadership in Entrepreneurship Cell coordination</p>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeProjectModal()">&times;</button>
+            <div id="modalContent">
+                <!-- Dynamic content will be inserted here -->
+            </div>
+        </div>
+    </div>
+    <script src="claudia.js"></script>
+</body>
+</html>
