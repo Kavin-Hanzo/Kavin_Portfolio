@@ -140,8 +140,8 @@ const portfolioData = {
         location: "Tamil Nadu, India",
         socialLinks: {
             linkedin: "https://www.linkedin.com/in/sivakavin",
-            github: "https://github.com/Kavin-Hanzo"
-            // twitter: "https://twitter.com/yourusername",
+            github: "https://github.com/Kavin-Hanzo",
+            hackerrank: "https://www.hackerrank.com/profile/kavin_hanzo"
             // website: "https://yourwebsite.com"
         }
     },
