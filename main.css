@@ -23,6 +23,13 @@
         line-height: 1.6;
     }
 
+    .homequote{
+        margin-top: 15px;
+        font-family: "Times New Roman", Times, serif;
+        font-size:large;
+        color: #d9d8da;
+    }
+
     /* Navigation */
     .navbar {
         position: fixed;
