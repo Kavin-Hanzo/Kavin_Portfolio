@@ -28,6 +28,7 @@ const projectDetails = {
         domain: "Vision-Transformer",
         description: "Developed a deep learning pipeline for detecting and segmenting methane plumes from satellite images, Analysed geospatial data for environmental monitoring. This model can be used to identify the methane plumes so that the mitigation of point sources are more effective and easier.",
         technologies: ["Python", "PyTorch", "OpenCV","Earth Engine","Gradio"],
+        image: "images/Methane Plume.webp",
         github: "https://github.com/Kavin-Hanzo/Ch4_Plume-detection"
     },
     project2: {
@@ -35,6 +36,7 @@ const projectDetails = {
         domain: "YOLO",
         description: "Detecting the objects by processing the video frames from camera, Integrated IP camera streams for live inference and segmentation tasks. This system can be very useful in surveillance, can also be fine-tunned and reproudcible for certain set of objects.",
         technologies: ["Python", "Networks","OpenCV","Flask"],
+        image: "images/objdet.webp",
         github: "https://github.com/Kavin-Hanzo/Detection-and-Segmentation"
     },
     project3: {
@@ -42,7 +44,16 @@ const projectDetails = {
         domain: "ViT",
         description: "Automated soil classification by utilizing deep learning techniques. Given a soil sample image, the model predicts its type (e.g., sandy, clay, loamy, etc.).",
         technologies: ["Python", "Flask","PyTorch"],
+        image: "images/soiltype.webp",
         github: "https://github.com/Kavin-Hanzo/Soil_Cls"
+    },
+    project4: {
+        title: "Chat App",
+        domain: "Java Application",
+        description: "TCP Client-Server based group messaging and client multi-threading.",
+        technologies: ["TCP/IP", "Multi-threading","Java"],
+        image: "images/chat_app_diagram.jpg",
+        github: "#"
     }
     // project4: {
     //     title: "Mobile App",
@@ -57,10 +68,21 @@ function openProjectModal(projectId) {
     const project = projectDetails[projectId];
     const modalContent = document.getElementById('modalContent');
     
+    // Check if an image exists in the object, otherwise default to empty string
+    const projectImageHtml = project.image ? `
+        <div style="margin-bottom: 1.5rem; text-align: center;">
+            <img src="${project.image}" alt="${project.title} Diagram" 
+                style="width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 12px; border: 1px solid var(--accent-color); box-shadow: 0 4px 15px rgba(0,0,0,0.2);">
+        </div>
+    ` : '';
+
     modalContent.innerHTML = `
         <h2>${project.title}</h2>
         <span class="project-domain" style="display: inline-block; margin-bottom: 1rem;">${project.domain}</span>
+        
         <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">${project.description}</p>
+        
+        ${projectImageHtml}
         
         <h3 style="color: var(--accent-color); margin-bottom: 1rem;">Technologies Used</h3>
         <div class="skills-badges" style="margin-bottom: 1.5rem;">
