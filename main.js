@@ -54,6 +54,22 @@ const projectDetails = {
         technologies: ["TCP/IP", "Multi-threading","Java"],
         image: "images/chat_app_diagram.jpg",
         github: "#"
+    },
+    project5: {
+        title: "SMS 2 Analytics",
+        domain: "Web Development",
+        description: "Transforming raw text into analytical reports.",
+        technologies: ["React.js","FastAPI"],
+        image: "images/sms2report_landing.png",
+        github: "https://github.com/Kavin-Hanzo/sms2report"
+    },
+    project6: {
+        title: "Stock Market prediction",
+        domain: "API Developement",
+        description: "A system that provide trend-based information to support investment decisions in stock market by predicting multiple stocks using MIMO approach. ",
+        technologies: ["FastAPI","Deep Learning"],
+        image: "images/stock2vec.png",
+        github: "https://github.com/Kavin-Hanzo/tree/stock2vec"
     }
     // project4: {
     //     title: "Mobile App",
@@ -159,7 +175,7 @@ const portfolioData = {
         role: "Student @ SASTRA",
         email: "kesivakavin@gmail.com",
         phone: "9443263299",
-        location: "Tamil Nadu, India",
+        location: "India",
         socialLinks: {
             linkedin: "https://www.linkedin.com/in/sivakavin",
             github: "https://github.com/Kavin-Hanzo",

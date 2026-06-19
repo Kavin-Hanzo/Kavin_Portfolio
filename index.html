@@ -49,7 +49,7 @@
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
-                            <span>Tamil Nadu, India</span>
+                            <span>India</span>
                         </div>
                     </div>
 
@@ -101,16 +101,19 @@
                     <div class="skills-category">
                         <h4>Technical Skills</h4>
                         <div class="skills-badges">
+                            <span class="skill-badge">FastAPI</span>
+                            <span class="skill-badge">React.js</span>
                             <span class="skill-badge">Machine Learning</span>
                             <span class="skill-badge">Deep Learning</span>
                             <span class="skill-badge">Computer Vision</span>
-                            <span class="skill-badge">Data Science</span>
                             <span class="skill-badge">PyTorch</span>
                             <span class="skill-badge">Flask</span>
                             <span class="skill-badge">Github</span>
                             <span class="skill-badge">Power BI</span>
                             <span class="skill-badge">Excel</span>
                             <span class="skill-badge">PostgreSQL</span>
+                            <span class="skill-badge">Linux</span>
+                            <span class="skill-badge">Docker</span>
                         </div>
                     </div>
 
@@ -175,8 +178,47 @@
         <div id="projects" class="page">
             <div class="container">
                 <h2 class="section-title">Projects</h2>
-                
+
                 <div class="projects-grid">
+                    <div class="project-card" onclick="openProjectModal('project6')">
+                        <div class="project-thumbnail">
+                            <img src="images/stock2vec.png" alt="Stock Market Prediction" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Stock Market Prediction</h3>
+                            <span class="project-domain">Deep Learning</span>
+                            <span class="project-domain">FastAPI</span>
+                            <p>A system that provide trend-based information
+                                to support investment decisions in stock market 
+                                by predicting multiple stocks using MIMO approach.</p>
+                            <div class="project-links">
+                                <a href="https://github.com/Kavin-Hanzo/LTC_LNN/tree/stock2vec" class="project-link" onclick="event.stopPropagation()">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="project-card" onclick="openProjectModal('project5')">
+                        <div class="project-thumbnail">
+                            <img src="images/sms2report_landing.png" alt="SMS2Analytics" style="width: 100%; height: 100%; object-fit: cover;">
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">SMS 2 Analytics</h3>
+                            <span class="project-domain">FastAPI</span>
+                            <span class="project-domain">React.js</span>
+                            <p>
+                                Transforming raw sms texts into analytical reports (under developement...)
+                                if you like to contribute access the below github link.
+                            </p> 
+                            <div class="project-links">
+                                <a href="https://github.com/Kavin-Hanzo/sms2report" class="project-link" onclick="event.stopPropagation()">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="project-card" onclick="openProjectModal('project1')">
                         <div class="project-thumbnail">
                             <img src="images/Methane Plume.webp" alt="Methane" style="width: 100%; height: 100%; object-fit: cover;">
